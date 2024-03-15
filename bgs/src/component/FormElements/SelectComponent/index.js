@@ -22,7 +22,7 @@ export default function SelectComponent({label,value,onChange,options = [],})
             ))
           ) : (
             <option id="" value={""}>
-              Select
+              select
             </option>
           )}
         </select>

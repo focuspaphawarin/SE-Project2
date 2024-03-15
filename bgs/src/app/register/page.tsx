@@ -38,11 +38,17 @@ export default function Register() {
                                             />
                                         ) : controlItem.componentType === "select" ? (
                                             <SelectComponent 
-                                            option={controlItem.options}
+                                            options={controlItem.options}
                                             label={controlItem.label}
                                             />
                                         ) : null
                                     )}
+                                    <button 
+                                    className="inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg 
+                  text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
+                  ">
+                                        Register
+                                    </button>
                                 </div>
                             )
                             }
@@ -52,6 +58,5 @@ export default function Register() {
                 </div>
             </div>
         </div>
-
-    )
+    );
 }
