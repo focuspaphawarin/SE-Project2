@@ -3,7 +3,7 @@ export const registrationFormControls = [
       id: 'username',
       type: 'username',
       placeholder: 'Enter your username',
-      label: 'UserName',
+      label: 'Username',
       componentType: 'input',
     },
     {
@@ -24,7 +24,7 @@ export const registrationFormControls = [
         id: 'phone_number',
         type: 'phone_number',
         placeholder: 'Enter your phone number',
-        label: 'Phone Number',
+        label: 'Phone',
         componentType: 'input',
     },
     {
@@ -42,12 +42,12 @@ export const registrationFormControls = [
       componentType: 'select',
       options: [
         {
-          id: 'shop',
-          label: 'Shop',
-        },
-        {
           id: 'customer',
           label: 'Customer',
+        },
+        {
+          id: 'shop',
+          label: 'Shop',
         },
       ],
     },
