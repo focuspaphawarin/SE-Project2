@@ -44,9 +44,11 @@ export default function Login() {
                             {loginFormControls.map((controlItem) =>
                                 controlItem.componentType === "input" ? (
                                     <InputComponent
-                                        type={controlItem.type}
-                                        placeholder={controlItem.placeholder}
-                                        label={controlItem.label}
+                                            type={controlItem.type}
+                                            placeholder={controlItem.placeholder}
+                                            label={controlItem.label}
+                                            onChange={(e: any) => console.log(e)}
+                                            value=""
                                     />
                                 ) : null
                             )}

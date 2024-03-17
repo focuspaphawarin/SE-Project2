@@ -36,11 +36,15 @@ export default function Register() {
                                             type={controlItem.type}
                                             placeholder={controlItem.placeholder}
                                             label={controlItem.label}
+                                            onChange={(e: any) => console.log(e)}
+                                            value=""
                                         />
                                     ) : controlItem.componentType === "select" ? (
                                         <SelectComponent
                                             options={controlItem.options}
                                             label={controlItem.label}
+                                            value=""
+                                            onChange={(e: any) => console.log(e)}
                                         />
                                     ) : null
                                 )}
