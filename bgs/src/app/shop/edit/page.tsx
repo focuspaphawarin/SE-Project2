@@ -108,23 +108,27 @@ export default function AdminAddNewProduct() {
 
 
                         {/* {adminAddProductformControls.map((controlItem) =>
-                    controlItem.componentType === "input" ? (
-                        <InputComponent
-                        type={controlItem.type}
-                        placeholder={controlItem.placeholder}
-                        label={controlItem.label}
-                        />
-                    ) : controlItem.componentType === "select" ? (
-                        <SelectComponent
-                        label={controlItem.label}
-                        options={controlItem.options}
-                        />
-                    ) : null
-                    )} */}
+                            controlItem.componentType === "input" ? (
+                                <InputComponent
+                                    type={controlItem.type}
+                                    placeholder={controlItem.placeholder}
+                                    label={controlItem.label}
+                                />
+                            ) : controlItem.componentType === "select" ? (
+                                <SelectComponent
+                                    label={controlItem.label}
+                                    options={controlItem.options}
+                                />
+                            ) : null
+                        )} */}
                         <button className="inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
-                                        focus:shadow font-medium mt-20 mb-60
-                                        ">
-                            Add Product
+                        focus:shadow font-medium mt-20 mb-60">
+                            Confirm
+                        </button>
+
+                        <button className="inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
+                        focus:shadow font-medium mt-20 mb-60">
+                            Cancel
                         </button>
 
                     </div>
