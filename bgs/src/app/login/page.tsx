@@ -22,6 +22,16 @@ export default function Login() {
     const router = useRouter();
     console.log(formData);
 
+    function isValidForm() {
+        return formData &&
+          formData.email &&
+          formData.email.trim() !== "" &&
+          formData.password &&
+          formData.password.trim() !== ""
+          ? true
+          : false;
+      } 
+
     return (
         <div className="flex">
             <div className="w-1/2">
@@ -59,7 +69,7 @@ export default function Login() {
                                             placeholder={controlItem.placeholder}
                                             label={controlItem.label}
                                             value={formData[controlItem.id]}
-                                            onChange={(event)=> {
+                                            onChange={(event: { target: { value: any; }; })=> {
                                                 setFormData({
                                                     ...formData,
                                                     [controlItem.id] : event.target.value
@@ -70,9 +80,11 @@ export default function Login() {
                             )}
                             <div className="flex items-center justify-center">
                                     <button
-                                        className="inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
+                                        className="disabled:opacity-50 inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
                                         focus:shadow font-medium mt-20 mb-60
-                                        ">
+                                        "
+                                        disabled={!isValidForm()}
+                                        >
                                         Login
                                     </button>
                             </div>
