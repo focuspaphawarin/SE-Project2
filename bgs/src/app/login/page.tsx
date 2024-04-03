@@ -5,11 +5,22 @@ import Image from "next/image";
 import InputComponent from "@/component/FormElements/InputComponent";
 import { useRouter } from "next/navigation";
 import { loginFormControls } from "@/utils";
+// import { login } from "@/services/login";
+import { useContext, useEffect, useState } from "react";
+
+
+
+const initialFormdata = {
+    email: "",
+    password: "",
+  };
 
 
 export default function Login() {
 
+    const [formData,setFormData] = useState(initialFormdata);
     const router = useRouter();
+    console.log(formData);
 
     return (
         <div className="flex">
@@ -47,8 +58,13 @@ export default function Login() {
                                             type={controlItem.type}
                                             placeholder={controlItem.placeholder}
                                             label={controlItem.label}
-                                            onChange={(e: any) => console.log(e)}
-                                            value=""
+                                            value={formData[controlItem.id]}
+                                            onChange={(event)=> {
+                                                setFormData({
+                                                    ...formData,
+                                                    [controlItem.id] : event.target.value
+                                                })
+                                            }}
                                     />
                                 ) : null
                             )}
