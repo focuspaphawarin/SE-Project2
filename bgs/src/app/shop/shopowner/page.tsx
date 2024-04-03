@@ -41,7 +41,7 @@ export default function Wait() {
                     <h1>delete</h1>
                 </div>
                 {/* ช่องๆๆๆ */}
-                <div className="flex justify-between">
+                <div className="flex justify-around">
                     {/* product */}
                     <div className="mt-5 mb-5 ml-10">
                         <div className="flex flex-row">
@@ -66,7 +66,7 @@ export default function Wait() {
                         <Link href="/shop/edit">
                             <Image
                                 className="object-cover"
-                                src="/bin.png"
+                                src="/edit.png"
                                 width={40}
                                 height={40}
                                 alt="Picture of Edit"
