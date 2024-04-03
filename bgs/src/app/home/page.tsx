@@ -32,13 +32,15 @@ export default function Home() {
                     <div className="flex flex-col">
                         <div className="flex flex-row justify-center mt-5 mb-5">
                             <div className="ml-10 mr-10 ">
-                                <Image
-                                    className="object-cover border-2 border-black"
-                                    src="/game1.png"
-                                    width={300}
-                                    height={300}
-                                    alt="Picture of ThatNotHat game"
-                                />
+                                <Link href="/detail">
+                                    <Image
+                                        className="object-cover border-2 border-black"
+                                        src="/game1.png"
+                                        width={300}
+                                        height={300}
+                                        alt="Picture of ThatNotHat game"
+                                    />
+                                </Link>
                                 <h1 className="mt-3 flex text-lg font-semibold">That’s Not a Hat</h1>
                                 <h1 className="flex text-sm font-semibold">price </h1>
                                 <div className="flex items-center justify-center ">
