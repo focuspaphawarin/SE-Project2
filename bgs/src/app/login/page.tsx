@@ -7,30 +7,73 @@ import { useRouter } from "next/navigation";
 import { loginFormControls } from "@/utils";
 // import { login } from "@/services/login";
 import { useContext, useEffect, useState } from "react";
+import { login } from "@/services/login/page";
+import GlobalContext from "@/context/index";
+import { Global } from "@emotion/react";
+
+import Cookies from "js-cookie";
+// import { toast } from "react-toastify";
+
 
 
 
 const initialFormdata = {
     email: "",
     password: "",
-  };
+};
 
 
 export default function Login() {
 
-    const [formData,setFormData] = useState(initialFormdata);
+    const [formData, setFormData] = useState(initialFormdata);
+    // const { isAuthUser,setIsAuthUser,user,setUser } = useContext(GlobalContext)
+
     const router = useRouter();
+
     console.log(formData);
 
     function isValidForm() {
         return formData &&
-          formData.email &&
-          formData.email.trim() !== "" &&
-          formData.password &&
-          formData.password.trim() !== ""
-          ? true
-          : false;
-      } 
+            formData.email &&
+            formData.email.trim() !== "" &&
+            formData.password &&
+            formData.password.trim() !== ""
+            ? true
+            : false;
+    }
+
+    async function handleLogin() {
+        // setComponentLevelLoader({ loading: true, id: "" });
+        const res = await login(formData);
+
+        console.log(res);
+
+
+    //     if (res.success) {
+    //           toast.success(res.message, {
+    //             position: toast.POSITION.TOP_RIGHT,
+    //           });
+    //         setIsAuthUser(true);
+    //         setUser(res?.finalData?.user);
+    //         setFormData(initialFormdata);
+    //         Cookies.set("token", res?.finalData?.token);
+    //         localStorage.setItem("user", JSON.stringify(res?.finalData?.user));
+    //           setComponentLevelLoader({ loading: false, id: "" });
+    //     } else {
+    //           toast.error(res.message, {
+    //             position: toast.POSITION.TOP_RIGHT,
+    //           });
+    //         setIsAuthUser(false);
+    //           setComponentLevelLoader({ loading: false, id: "" });
+    //     }
+    }
+
+    // console.log(isAuthUser,user);
+
+    // useEffect(()=> {
+    //     if(isAuthUser) router.push('/');
+    // },[isAuthUser]);
+
 
     return (
         <div className="flex">
@@ -65,28 +108,29 @@ export default function Login() {
                             {loginFormControls.map((controlItem) =>
                                 controlItem.componentType === "input" ? (
                                     <InputComponent
-                                            type={controlItem.type}
-                                            placeholder={controlItem.placeholder}
-                                            label={controlItem.label}
-                                            value={formData[controlItem.id]}
-                                            onChange={(event: { target: { value: any; }; })=> {
-                                                setFormData({
-                                                    ...formData,
-                                                    [controlItem.id] : event.target.value
-                                                })
-                                            }}
+                                        type={controlItem.type}
+                                        placeholder={controlItem.placeholder}
+                                        label={controlItem.label}
+                                        value={formData[controlItem.id]}
+                                        onChange={(event: { target: { value: any; }; }) => {
+                                            setFormData({
+                                                ...formData,
+                                                [controlItem.id]: event.target.value
+                                            })
+                                        }}
                                     />
                                 ) : null
                             )}
                             <div className="flex items-center justify-center">
-                                    <button
-                                        className="disabled:opacity-50 inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
+                                <button
+                                    className="disabled:opacity-50 inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
                                         focus:shadow font-medium mt-20 mb-60
                                         "
-                                        disabled={!isValidForm()}
-                                        >
-                                        Login
-                                    </button>
+                                    disabled={!isValidForm()}
+                                    onClick={handleLogin}
+                                >
+                                    Login
+                                </button>
                             </div>
                         </div>
                     </div>
