@@ -94,7 +94,9 @@ export default function AdminAddNewProduct() {
                                 controlItem.componentType === "select" ? (
                                     <SelectComponent
                                         label={controlItem.label}
-                                        options={controlItem.options}
+                                        options={controlItem.options} 
+                                        value={undefined} 
+                                        onChange={undefined}
                                     />
                                 ) : null
                             )}
