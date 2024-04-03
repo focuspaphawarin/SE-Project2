@@ -42,13 +42,15 @@ export default function UserNav() {
                             </Link>
                             {/* <a href="#" class="">Contact</a> */}
                             <div className="border-black border-2 rounded-full ">
-                                <Image
-                                    className="pt-2 pr-2 pb-2 pl-2"
-                                    src="/profile.png"
-                                    width={40}
-                                    height={40}
-                                    alt="Picture of Profle"
-                                />
+                                <Link href="/profile/user">
+                                    <Image
+                                        className="pt-2 pr-2 pb-2 pl-2"
+                                        src="/profile.png"
+                                        width={40}
+                                        height={40}
+                                        alt="Picture of Profle"
+                                    />
+                                </Link>
                             </div>
 
                         </div>
