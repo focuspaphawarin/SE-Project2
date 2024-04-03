@@ -4,11 +4,27 @@ import Image from "next/image";
 import InputComponent from "@/component/FormElements/InputComponent";
 import SelectComponent from "@/component/FormElements/SelectComponent";
 import { registrationFormControls } from "@/utils";
+import { useState } from "react";
 
 const isRegistered = false;
 
+const initialFromData = {
+    username: '',
+    email: '',
+    password: '',
+    phone_number: '',
+    address: '',
+    role: 'customer'
+};
+
 
 export default function Register() {
+
+    const [fromData, setFromData] = useState(initialFromData);
+
+
+    console.log(fromData);
+
     return (
         <div className="h-full flex">
             <div className="w-1/2">
@@ -36,15 +52,25 @@ export default function Register() {
                                             type={controlItem.type}
                                             placeholder={controlItem.placeholder}
                                             label={controlItem.label}
-                                            onChange={(e: any) => console.log(e)}
-                                            value=""
+                                            onChange={(event: { target: { value: any; }; }) => {
+                                                setFromData({
+                                                    ...fromData,
+                                                    [controlItem.id]: event.target.value,
+                                                })
+                                            }}
+                                            value={initialFromData[controlItem.id]}
                                         />
                                     ) : controlItem.componentType === "select" ? (
                                         <SelectComponent
                                             options={controlItem.options}
                                             label={controlItem.label}
-                                            value=""
-                                            onChange={(e: any) => console.log(e)}
+                                            onChange={(event: { target: { value: any; }; }) => {
+                                                setFromData({
+                                                    ...fromData,
+                                                    [controlItem.id]: event.target.value
+                                                })
+                                            }}
+                                            value={initialFromData[controlItem.id]}
                                         />
                                     ) : null
                                 )}
