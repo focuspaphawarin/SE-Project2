@@ -6,7 +6,7 @@ import SelectComponent from "@/component/FormElements/SelectComponent"
 import ShopNav from "@/component/ShopNav";
 import Image from "next/image";
 import UserNav from "@/component/Navbar/UserNav";
-import { adminAddProductformControls } from "@/utils"
+import { ShopProductformControls } from "@/utils"
 
 
 export default function AdminAddNewProduct() {

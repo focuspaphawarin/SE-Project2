@@ -5,7 +5,7 @@ import InputComponent from "@/component/FormElements/InputComponent"
 import SelectComponent from "@/component/FormElements/SelectComponent"
 import ShopNav from "@/component/ShopNav";
 import Image from "next/image";
-import { adminAddProductformControls } from "@/utils"
+import { ShopProductformControls } from "@/utils"
 
 
 export default function AdminAddNewProduct() {
@@ -90,7 +90,7 @@ export default function AdminAddNewProduct() {
                         </div>
 
                         <div className="w-full ">
-                            {adminAddProductformControls.map((controlItem) =>
+                            {ShopProductformControls.map((controlItem) =>
                                 controlItem.componentType === "select" ? (
                                     <SelectComponent
                                         label={controlItem.label}

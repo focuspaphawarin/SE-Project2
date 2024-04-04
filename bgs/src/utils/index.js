@@ -70,7 +70,7 @@ export const loginFormControls = [
   },
 ];
 
-export const adminAddProductformControls = [
+export const ShopProductformControls = [
   {
     id: "boardgame_name",
     type: "text",
