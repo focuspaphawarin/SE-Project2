@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import InputComponent from "@/component/FormElements/InputComponent";
+import Link from 'next/link';
 import { useRouter } from "next/navigation";
 import { loginFormControls } from "@/utils";
 
@@ -53,12 +54,15 @@ export default function Login() {
                                 ) : null
                             )}
                             <div className="flex items-center justify-center">
+                            <Link href="/home">
                                     <button
                                         className="inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
                                         focus:shadow font-medium mt-20 mb-60
                                         ">
                                         Login
                                     </button>
+
+                            </Link>
                             </div>
                         </div>
                     </div>
