@@ -43,7 +43,7 @@ export default function Wait() {
                 {/* ช่องๆๆๆ */}
                 <div className="flex justify-around">
                     {/* product */}
-                    <div className="mt-5 mb-5 ml-10">
+                    <div className="mt-5 mb-5 ">
                         <div className="flex flex-row">
                             <Image
                                 className="object-cover border-2 border-black rounded-lg"
@@ -53,16 +53,16 @@ export default function Wait() {
                                 alt="Picture of Party game"
                             />
                             <div className=" ml-4 flex flex-col justify-center">
-                                <h1 className="pb-5">name</h1>
+                                <h1 className="pb-5">Cat In The Box</h1>
                             </div>
                         </div>
                     </div>
                     {/* stock */}
-                    <div className="flex items-center jutify-center">
-                        <h1 className="pb-5 mr-10">100</h1>
+                    <div className="flex items-center jutify-center -ml-20">
+                        <h1 className="pb-5 mr-10 -ml-10">100</h1>
                     </div>
                     {/* edit */}
-                    <div className="flex items-center jutify-center">
+                    <div className="flex items-center jutify-center mr-4">
                         <Link href="/shop/edit">
                             <Image
                                 className="object-cover"
@@ -74,7 +74,7 @@ export default function Wait() {
                         </Link>
                     </div>
                     {/* delete */}
-                    <div className="flex items-center jutify-center mr-10">
+                    <div className="flex items-center jutify-center mr-4">
                         <Image
                             className="object-cover" onClick={() => setOpen(true)}
                             src="/bin.png"

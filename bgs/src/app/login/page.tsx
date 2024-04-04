@@ -57,7 +57,7 @@ export default function Login() {
                             <Link href="/home">
                                     <button
                                         className="inline-flex items-center justify-center bg-orange-400 hover:bg-green-500 text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-2xl 
-                                        focus:shadow font-medium mt-20 mb-60
+                                        focus:shadow font-medium mt-20 mb-60 
                                         ">
                                         Login
                                     </button>

@@ -19,8 +19,9 @@ export default function Home() {
                     />
                     <div className="absolute bottom-[170px] left-[400px]">
                         <button
-                            className="bg-[#FCC362] hover:bg-green-500 text-white font-bold py-4 px-8 border border-b-2 border-gray-600 rounded-full shadow-2xl text-4xl 
-                                            focus:shadow font-medium 
+                            className="bg-[#FCC362] hover:bg-green-500 text-white font-bold py-4 px-8 
+                            border border-b-2 border-gray-600 rounded-full shadow-2xl text-4xl 
+                            focus:shadow font-medium 
                                             ">
                             Buy now
                         </button>
@@ -28,7 +29,9 @@ export default function Home() {
                 </div>
                 {/* New bg */}
                 <div className="mt-2 mb-2">
-                    <div className="ml-10 mr-10 pt-3 pb-3 text-3xl font-semibold">New Board Games</div>
+                    <div className="ml-10 mr-10 pt-3 pb-3 text-3xl font-semibold">
+                        New Board Games
+                    </div>
                     <div className="flex flex-col">
                         <div className="flex flex-row justify-center mt-5 mb-5">
                             <div className="ml-10 mr-10 ">
@@ -45,8 +48,10 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">1100.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-                                        className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
-                                                focus:shadow font-medium mb-5 mt-3 ">
+                                        className="inline-flex w-full items-center justify-center 
+                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
+                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
+                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
                                         Add to cart
                                     </button>
                                 </div>
@@ -63,8 +68,10 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">1440.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-                                        className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
-                                                focus:shadow font-medium mb-5 mt-3 ">
+                                        className="inline-flex w-full items-center justify-center 
+                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
+                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
+                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
                                         Add to cart
                                     </button>
                                 </div>
@@ -81,8 +88,10 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">950.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-                                        className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
-                                                focus:shadow font-medium mb-5 mt-3 ">
+                                        className="inline-flex w-full items-center justify-center 
+                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
+                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
+                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
                                         Add to cart
                                     </button>
                                 </div>
@@ -95,17 +104,22 @@ export default function Home() {
                                     height={300}
                                     alt="Picture of Fearsome game"
                                 />
-                                <h1 className="mt-3 flex text-lg font-semibold">Unlock!</h1>
-                                <h1 className="flex text-sm font-semibold">1100.00 Baht</h1>
+                                <h1 className="mt-3 flex text-lg font-semibold">
+                                    Unlock!
+                                </h1>
+                                <h1 className="flex text-sm font-semibold">
+                                    1100.00 Baht
+                                </h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-                                        className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
-                                                focus:shadow font-medium mb-5 mt-3 ">
+                                        className="inline-flex w-full items-center justify-center 
+                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
+                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
+                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
                                         Add to cart
                                     </button>
                                 </div>
-                            </div>
-                           
+                            </div> 
                         </div>
                     </div>
                 </div>
