@@ -48,16 +48,9 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">1100.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-<<<<<<< HEAD
-                                        className="inline-flex w-full items-center justify-center 
-                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
-                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
-                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
-=======
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
                                         font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
                                                 focus:shadow font-medium mb-5 mt-3 ">
->>>>>>> origin/main
                                         Add to cart
                                     </button>
                                 </div>
@@ -74,16 +67,9 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">1440.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-<<<<<<< HEAD
-                                        className="inline-flex w-full items-center justify-center 
-                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
-                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
-                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
-=======
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
                                         font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
                                                 focus:shadow font-medium mb-5 mt-3 ">
->>>>>>> origin/main
                                         Add to cart
                                     </button>
                                 </div>
@@ -100,16 +86,9 @@ export default function Home() {
                                 <h1 className="flex text-sm font-semibold">950.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-<<<<<<< HEAD
-                                        className="inline-flex w-full items-center justify-center 
-                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
-                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
-                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
-=======
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
                                         font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
                                                 focus:shadow font-medium mb-5 mt-3 ">
->>>>>>> origin/main
                                         Add to cart
                                     </button>
                                 </div>
@@ -130,16 +109,9 @@ export default function Home() {
                                 </h1>
                                 <div className="flex items-center justify-center ">
                                     <button
-<<<<<<< HEAD
-                                        className="inline-flex w-full items-center justify-center 
-                                        bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-1 
-                                        px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl 
-                                        text-lg focus:shadow font-medium mb-5 mt-3 ">
-=======
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
                                         font-bold py-1 px-2 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
                                                 focus:shadow font-medium mb-5 mt-3 ">
->>>>>>> origin/main
                                         Add to cart
                                     </button>
                                 </div>
