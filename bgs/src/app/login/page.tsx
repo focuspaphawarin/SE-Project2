@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import InputComponent from "@/component/FormElements/InputComponent";
+import Link from 'next/link';
 import { useRouter } from "next/navigation";
 import { loginFormControls } from "@/utils";
 import { useContext, useEffect, useState } from "react";

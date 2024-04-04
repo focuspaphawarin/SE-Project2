@@ -32,15 +32,17 @@ export default function Home() {
                     <div className="flex flex-col">
                         <div className="flex flex-row justify-center mt-5 mb-5">
                             <div className="ml-10 mr-10 ">
-                                <Image
-                                    className="object-cover border-2 border-black"
-                                    src="/game1.png"
-                                    width={300}
-                                    height={300}
-                                    alt="Picture of ThatNotHat game"
-                                />
-                                <h1 className="mt-3 flex text-lg font-semibold">That’s Not a Hat</h1>
-                                <h1 className="flex text-sm font-semibold">price </h1>
+                                <Link href="/detail">
+                                    <Image
+                                        className="object-cover border-2 border-black"
+                                        src="/game1.png"
+                                        width={300}
+                                        height={300}
+                                        alt="Picture of ThatNotHat game"
+                                    />
+                                </Link>
+                                <h1 className="mt-3 flex text-lg font-semibold">Cat In The Box</h1>
+                                <h1 className="flex text-sm font-semibold">1100.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
@@ -53,13 +55,13 @@ export default function Home() {
                             <div className="ml-10 mr-10 ">
                                 <Image
                                     className="object-cover border-2 border-black"
-                                    src="/game1.png"
+                                    src="/ProjectL.png"
                                     width={300}
                                     height={300}
                                     alt="Picture of ThatNotHat game"
                                 />
-                                <h1 className="mt-3 flex text-lg font-semibold">That’s Not a Hat</h1>
-                                <h1 className="flex text-sm font-semibold">price </h1>
+                                <h1 className="mt-3 flex text-lg font-semibold">Project L</h1>
+                                <h1 className="flex text-sm font-semibold">1440.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
@@ -72,13 +74,13 @@ export default function Home() {
                             <div className="ml-10 mr-10 ">
                                 <Image
                                     className="object-cover border-2 border-black"
-                                    src="/game1.png"
+                                    src="/Salem.jpg"
                                     width={300}
                                     height={300}
                                     alt="Picture of ThatNotHat game"
                                 />
-                                <h1 className="mt-3 flex text-lg font-semibold">That’s Not a Hat</h1>
-                                <h1 className="flex text-sm font-semibold">price </h1>
+                                <h1 className="mt-3 flex text-lg font-semibold">Salem</h1>
+                                <h1 className="flex text-sm font-semibold">950.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
@@ -91,13 +93,13 @@ export default function Home() {
                             <div className="ml-10 mr-10 ">
                                 <Image
                                     className="object-cover border-2 border-black"
-                                    src="/game1.png"
+                                    src="/Unlock.jpg"
                                     width={300}
                                     height={300}
-                                    alt="Picture of ThatNotHat game"
+                                    alt="Picture of Fearsome game"
                                 />
-                                <h1 className="mt-3 flex text-lg font-semibold">That’s Not a Hat</h1>
-                                <h1 className="flex text-sm font-semibold">price </h1>
+                                <h1 className="mt-3 flex text-lg font-semibold">Unlock!</h1>
+                                <h1 className="flex text-sm font-semibold">1100.00 Baht</h1>
                                 <div className="flex items-center justify-center ">
                                     <button
                                         className="inline-flex w-full items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white 
@@ -120,7 +122,7 @@ export default function Home() {
                                 <div className="ml-10 mr-10 ">
                                     <Image
                                         className="object-cover border-2 border-black"
-                                        src="/cate.jpeg"
+                                        src="/party.jpeg"
                                         width={300}
                                         height={300}
                                         alt="Picture of Party game"
@@ -132,7 +134,7 @@ export default function Home() {
                                 <div className="ml-10 mr-10 ">
                                     <Image
                                         className="object-cover border-2 border-black"
-                                        src="/cate.jpeg"
+                                        src="/fam.jpeg"
                                         width={300}
                                         height={300}
                                         alt="Picture of Party game"
@@ -144,7 +146,7 @@ export default function Home() {
                                 <div className="ml-10 mr-10 ">
                                     <Image
                                         className="object-cover border-2 border-black"
-                                        src="/cate.jpeg"
+                                        src="/strategy.png"
                                         width={300}
                                         height={300}
                                         alt="Picture of Party game"

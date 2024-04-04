@@ -4,7 +4,7 @@ import Image from "next/image";
 import UserNav from "@/component/Navbar/UserNav";
 
 import QuantityInput from "@/component/ui/InputNumber";
-
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Modal from "@/component/ui/Modal";
 import Popup from 'reactjs-popup';
@@ -51,7 +51,7 @@ export default function Cart() {
                     </div>
                 </div>
                 {/* amount */}
-                <div className=" flex jutify-item-center">
+                <div className=" flex jutify-item-center -ml-40">
                     <QuantityInput />
                 </div>
                 {/* price */}
@@ -64,7 +64,7 @@ export default function Cart() {
                 </div>
 
             </div>
-            <div className="flex justify-around border-b-2 border-gray-500 pb-1 ml-20 mr-20">
+            <div className="flex justify-around border-b-2 border-gray-500 pb-1 ml-20 mr-20 ">
                 {/* product */}
                 <div className="mt-5 mb-5">
                     <div className="flex flex-row ">
@@ -87,7 +87,7 @@ export default function Cart() {
                     </div>
                 </div>
                 {/* amount */}
-                <div className=" flex jutify-item-center">
+                <div className=" flex jutify-item-center -ml-40">
                     <QuantityInput />
                 </div>
                 {/* price */}
@@ -103,17 +103,19 @@ export default function Cart() {
             {/* total */}
             <div className="flex justify-around">
                 <div className="bg-gray-200 mt-10 rounded-md w-[800px] ">
-                    <div className="text-lg">
-                        ที่อยู่จ้ากดเ่หเสหเดส่สห่เหา่เาสห่กสเ
+                    <div className="text-xl flex justify-center mt-5">
+                        address
                     </div>
                     
                     <div className="flex justify-center ">
-                        <button
-                            className="iinline-flex items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
-                            focus:shadow font-medium mb-5 mt-10"
-                        >
-                            Change Address?
-                        </button>
+                        <Link href="/profile/user">
+                            <button
+                                className="iinline-flex items-center justify-center bg-[#0899E7] hover:bg-[#0B87B2] text-white font-bold py-2 px-4 border border-b-2 border-gray-600 rounded-full shadow-2xl text-lg 
+                                focus:shadow font-medium mb-5 mt-10"
+                            >
+                                Change Address?
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="">
