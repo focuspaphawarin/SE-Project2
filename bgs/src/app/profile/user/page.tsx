@@ -36,7 +36,7 @@ export default function AdminAddNewProduct() {
                                         <h1>Wonyong</h1>
                                     </div>
                                     <div className="pb-1 pt-5 ml-10 mr-20 flex text-xl ">
-                                        <h1>@email.com</h1>
+                                        <h1>wonyong@email.com</h1>
                                     </div>
                                 </div>
                             </div>

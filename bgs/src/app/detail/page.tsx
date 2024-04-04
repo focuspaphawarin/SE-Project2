@@ -25,7 +25,7 @@ export default function DetailProduct () {
                         </div>
                         < div className="ml-10 mr-5 ">
                             <h1 className="ml-10 mr-10 pb-3 text-4xl font-semibold">Cat In The Box</h1>
-                            <p className="ml-10 mr-10 text-xl text-[#ED3C3C]">1,240.00 bath</p>
+                            <p className="ml-10 mr-10 text-xl text-[#ED3C3C]">1,100.00 bath</p>
                             <div className="mt-3">
                                 <h3 className="text-xl mt-2 mr-2 mb- ml-10 font-medium">Category</h3>
                                 <p className="text-xl mr-0 mb-0 ml-14">Family</p>
