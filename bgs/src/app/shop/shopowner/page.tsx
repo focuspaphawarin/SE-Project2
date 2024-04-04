@@ -94,7 +94,7 @@ export default function Wait() {
                                     />
                                     <h3 className="text-lg font-black text-gray-800">Are you sure ?</h3>
                                     <p className="text-sm text-gray-500">
-                                        please be advised that once you click'Cancel Order' ,the transaction cannot be undone. Make sure you are certaion about your decision before proceeding.Thank you for your understanding.
+                                    Please note that when you press 'Delete Item,' this action cannot be undone. Please double-check before proceeding. Thank you..
                                     </p>
                                 </div>
                                 <div className="flex gap-4">
