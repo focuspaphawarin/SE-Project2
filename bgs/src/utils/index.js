@@ -36,7 +36,7 @@ export const registrationFormControls = [
   },
   {
     id: 'role',
-    type: '',
+    type: 'role',
     placeholder: '',
     label: 'Role',
     componentType: 'select',
