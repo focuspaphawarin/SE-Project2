@@ -1,3 +1,4 @@
+import connectToDB from "@/database";
 import mongoose, { Document, Model } from "mongoose";
 
 // Define interface for User document

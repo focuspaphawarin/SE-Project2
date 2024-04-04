@@ -5,15 +5,14 @@ const configOptions = {
     useUnifiedTopology: true,
 };
 
-
-const connectToDB = async () => {
+export const connectToDB = async () => {
     const connectionUrl = 'mongodb+srv://paphawarinfocus:KcFDCjBSzC9HEHSb@cluster0.x8ucdl7.mongodb.net/'
 
     mongoose
-        .connect(connectionUrl,configOptions)
+        .connect(connectionUrl, configOptions)
         .then(() => console.log("Ecommerce database connected successfully!"))
         .catch((err) =>
-            console.log('Getting Error from DB connection ${err.message}')
+            console.log(`Getting Error from DB connection ${err.message}`)
         );
 };
 

@@ -14,7 +14,8 @@ const schema = Joi.object({
 
 export const dynamic = "force-dynamic";
 
-export async function POST(req: { json: () => PromiseLike<{ email: any; password: any; }> | { email: any; password: any; }; }) {
+export async function POST(req: { json: () => PromiseLike<{ email: any; password: any; }> | 
+{ email: any; password: any; }; }) {
 
     await connectToDB();
 

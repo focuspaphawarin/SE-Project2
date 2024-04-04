@@ -5,23 +5,41 @@ import Joi from "joi";
 import { NextResponse } from "next/server";
 
 const schema = Joi.object({
-    username: Joi.string().required(),
-    email: Joi.string().email().required(),
-    password: Joi.string().min(6).required(),
-    phone_number: Joi.number().min(10).required(),
-    address: Joi.string().required(),
-    role: Joi.string().required()
+  username: Joi.string().required(),
+  email: Joi.string().email().required(),
+  password: Joi.string().min(6).required(),
+  phone_number: Joi.number().min(10).required(),
+  address: Joi.string().required(),
+  role: Joi.string().required()
 });
 
 export const dynamic = "force-dynamic";
 
-export async function POST(req: { json: () => PromiseLike<{ username: any; email: any; password: any; phone_number: any; address: any; role: any; }> | { username: any; email: any; password: any; phone_number: any; address: any; role: any; }; }) {
+export async function POST(req: { json: () => 
+  PromiseLike<{ username: any; 
+  email: any; 
+  password: any; 
+  phone_number: any; 
+  address: any; 
+  role: any; }> | 
+  { username: any; 
+    email: any; 
+    password: any; 
+    phone_number: any; 
+    address: any; 
+    role: any; }; }) {
   await connectToDB();
 
   const { username, email, password, phone_number, address, role } = await req.json();
   //validate the schema
 
-  const { error } = schema.validate({ username, email, password, phone_number, address, role });
+  const { error } = schema.validate({ 
+    username, 
+    email, 
+    password, 
+    phone_number, 
+    address, 
+    role });
 
   if (error) {
     console.log(error);
@@ -61,7 +79,7 @@ export async function POST(req: { json: () => PromiseLike<{ username: any; email
       }
     }
   } catch (error) {
-    console.log("Error while new user registration. Please try again");
+    console.log(`Error while new user registration. Please try again ${error}`);
 
     return NextResponse.json({
       success: false,
